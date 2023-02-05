@@ -1,0 +1,16 @@
+microservices:
+  - app: user-authenication
+    port: 9000
+    version: 1.7
+  - app: shopping-cart
+    port: 9002
+    version: [1.9, 2.0, 2.1]
+     #- 1.9
+     #- 2.0
+     #- 2.1
+
+
+microservice:
+  - user-authenication
+  - shopping cart
+

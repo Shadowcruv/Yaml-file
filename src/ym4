@@ -1,0 +1,15 @@
+#kuberneetics yml file for lauching pods
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: testapp
+    env: dev
+spec:
+  containers:
+    - image: k8s.ger.io/echoservers:1.10
+      name: echoserver
+      ports:
+        - containerPort: 8080
+          protocol: TCP

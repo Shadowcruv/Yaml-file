@@ -1,0 +1,16 @@
+#A Kubernetes yml file
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: spark-master-controller
+spec:
+  replicas: 1
+  selector:
+      component: spark-master
+  template:
+    metadata:
+      labels:
+        components: spark-master
+
+
+

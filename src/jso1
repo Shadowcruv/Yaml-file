@@ -1,0 +1,29 @@
+{
+  "kind": "Deployment",
+  "apiVersion": "apps/v1",
+  "metadata": {
+    "name": "kibana-kibana",
+    "namespace": "default",
+    "selfLink": "/apis/apps/v1/namespaces/default/deployments/kibana-kibana",
+    "uid": "c4cc56c2-fc9a-44ec-b13b-2a1080c53d7e",
+    "resourceVersion": "455045",
+    "generation": 1,
+    "creationTimestamp": "2020-04-DITI6.56.318",
+    "labels": {
+      "apps": "kibana",
+      "app.kubernetes.io/managed-by": "Helm",
+      "release": "kibana"
+    },
+    "annotations": {
+      "deployment.kubernetes.io/revision": "1",
+      "meta.helm.sh/release-name": "kibana",
+      "meta.helm.sh/release-namespace":"default"
+    },
+    "managedFields": [
+      {
+        "manager": "Go-http-client",
+        "operation": "Update"
+      }
+    ]
+  }
+}
